@@ -135,10 +135,68 @@ body {
     text-align: center;
     font-size: 16px;
     margin-top: 20px;
-    background: rgba(231, 76, 60, 0.4);
+    background: rgba(177, 137, 127, 0.452);
 
-    color: #c0392b;
+    color: #b43224;
     padding: 10px;
     border-radius: 10px;
     display: none;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Adjust card size and padding */
+    .card {
+        padding: 20px 15px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* Reduce search input height and font size for better fit */
+    .search input {
+        padding: 10px 20px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    /* Reduce size of the search button */
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Reduce the weather icon size */
+    .weather-icon {
+        width: 100px;
+    }
+
+    /* Decrease font sizes for the temperature and city name */
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    /* Adjust font size of the weather details (humidity, wind) */
+    .humidity, .wind {
+        font-size: 20px;
+    }
+
+    /* Adjust the layout of weather details (stack on smaller screens) */
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        margin-bottom: 15px;
+    }
+
+    .col img {
+        width: 35px;
+        margin-right: 10px;
+    }
 }
